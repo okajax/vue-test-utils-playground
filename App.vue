@@ -1,3 +1,21 @@
 <template>
-  <h1>Hello!</h1>
+  <div>
+    <span class="count">{{ count }}</span>
+    <button @click="increment">Increment</button>
+  </div>
 </template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      count: 0
+    };
+  },
+  methods: {
+    increment() {
+      this.count++;
+    }
+  }
+};
+</script>
