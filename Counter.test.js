@@ -1,9 +1,16 @@
 import { mount } from '@vue/test-utils';
-import Counter from './Counter';
+import Counter from './counter';
 
-const wrapper = mount(Counter);
-const vm = wrapper.vm;
+describe('Counter', () => {
+  const wrapper = mount(Counter);
 
-console.log('hello my first test');
-console.log(wrapper);
-console.log(vm);
+  it('counter exists', () => {
+    const actual = wrapper.find('span.count').exists();
+    expect(actual).toBe(true);
+  });
+
+  it('button exists', () => {
+    const actual = wrapper.find('button').exists();
+    expect(actual).toBe(true);
+  });
+})
