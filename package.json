@@ -18,6 +18,7 @@
   "homepage": "https://github.com/okajax/vue-test-utils-playground#readme",
   "devDependencies": {
     "@vue/test-utils": "1.0.4",
+    "babel-jest": "26.3.0",
     "jest": "26.4.2",
     "jsdom": "16.4.0",
     "jsdom-global": "3.0.2",
