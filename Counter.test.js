@@ -24,4 +24,4 @@ describe('Counter', () => {
     expect(incremented).toBeGreaterThan(init);
   });
 
-})
+});
