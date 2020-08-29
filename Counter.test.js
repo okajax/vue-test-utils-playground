@@ -5,18 +5,20 @@ describe('Counter', () => {
   const wrapper = mount(Counter);
 
   it('counter exists', () => {
-    const actual = wrapper.find('span.count').exists();
-    expect(actual).toBe(true);
+    const el = wrapper.find('span.count');
+    expect(el.exists()).toBe(true);
   });
 
   it('button exists', () => {
-    const actual = wrapper.find('button').exists();
-    expect(actual).toBe(true);
+    const el = wrapper.find('button');
+    expect(el.exists()).toBe(true);
   });
 
   it('click increment button', () => {
+    const button = wrapper.find('button');
+
     const init = wrapper.vm.$data.count;
-    wrapper.find('button').trigger('click');
+    button.trigger('click');
     const incremented = wrapper.vm.$data.count;
 
     expect(incremented).toBeGreaterThan(init);
