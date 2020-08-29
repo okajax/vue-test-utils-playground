@@ -16,7 +16,6 @@ describe('Counter', () => {
 
   it('click increment button', () => {
     const button = wrapper.find('button');
-
     const init = wrapper.vm.$data.count;
     button.trigger('click');
     const incremented = wrapper.vm.$data.count;
