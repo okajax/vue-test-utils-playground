@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/okajax/vue-test-utils-playground/issues"
   },
-  "homepage": "https://github.com/okajax/vue-test-utils-playground#readme"
+  "homepage": "https://github.com/okajax/vue-test-utils-playground#readme",
+  "devDependencies": {
+    "@vue/test-utils": "1.0.4",
+    "jest": "26.4.2",
+    "jsdom": "16.4.0",
+    "jsdom-global": "3.0.2",
+    "vue-jest": "3.0.6"
+  }
 }
