@@ -23,5 +23,16 @@
     "jsdom": "16.4.0",
     "jsdom-global": "3.0.2",
     "vue-jest": "3.0.6"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "vue-jest",
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    }
   }
 }
