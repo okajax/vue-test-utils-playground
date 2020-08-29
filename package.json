@@ -16,13 +16,19 @@
     "url": "https://github.com/okajax/vue-test-utils-playground/issues"
   },
   "homepage": "https://github.com/okajax/vue-test-utils-playground#readme",
+  "dependencies": {
+    "vue": "2.6.12"
+  },
   "devDependencies": {
     "@vue/test-utils": "1.0.4",
+    "babel-core": "7.0.0-bridge.0",
     "babel-jest": "26.3.0",
+    "babel-preset-env": "1.7.0",
     "jest": "26.4.2",
     "jsdom": "16.4.0",
     "jsdom-global": "3.0.2",
-    "vue-jest": "3.0.6"
+    "vue-jest": "3.0.6",
+    "vue-template-compiler": "2.6.12"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -31,8 +37,8 @@
       "vue"
     ],
     "transform": {
-      ".*\\.(vue)$": "vue-jest",
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+      "^.+\\.js$": "babel-jest",
+      ".*\\.(vue)$": "vue-jest"
     }
   }
 }
