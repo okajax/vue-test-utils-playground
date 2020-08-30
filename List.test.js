@@ -11,7 +11,7 @@ describe('List', () => {
       'cola'
     ];
     wrapper.vm.sort();
-    expect(wrapper.vm.$data.items).toBe(expected);
+    expect(wrapper.vm.$data.items).toStrictEqual(expected);
   });
 
   it('sort by desc', () => {
@@ -21,7 +21,7 @@ describe('List', () => {
       'apple'
     ];
     wrapper.vm.sort(true);
-    expect(wrapper.vm.$data.items).toBe(expected);
+    expect(wrapper.vm.$data.items).toStrictEqual(expected);
   });
 
 });
